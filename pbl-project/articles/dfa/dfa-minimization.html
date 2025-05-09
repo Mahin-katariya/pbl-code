@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DFA Minimization Made Easy | AutomataLab</title>
+    <link rel="stylesheet" href="/assets/styles/article.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="article-nav">
+        <a href="/" class="nav-logo">
+            <i class="ri-code-box-fill"></i>
+            <span>AutomataLab</span>
+        </a>
+        <div class="nav-links">
+            <a href="/">Dashboard</a>
+            <span>/</span>
+            <a href="#" class="current">DFA Minimization</a>
+        </div>
+    </nav>
+
+    <main class="article-content">
+        <h1>DFA Minimization: Making Your DFA Simpler</h1>
+        
+        <div class="article-metadata">
+            <span class="difficulty medium">Medium</span>
+            <span class="reading-time">12 min read</span>
+            <span class="last-updated">Last updated: March 2024</span>
+        </div>
+
+        <div class="real-world-analogy">
+            <h2>🎯 Why Minimize?</h2>
+            <p>Think of DFA minimization like decluttering your room - we remove states we never use (unreachable states) and combine states that do the same thing (equivalent states). A simpler DFA is easier to understand and more efficient to implement!</p>
+        </div>
+
+        <section id="minimization-steps">
+            <h2>How to Minimize a DFA</h2>
+            <div class="steps-box">
+                <h3>Two Main Steps:</h3>
+                <ol>
+                    <li>
+                        <strong>Remove Unreachable States</strong>
+                        <p>States we can never get to from the start state</p>
+                    </li>
+                    <li>
+                        <strong>Merge Equivalent States</strong>
+                        <p>States that behave exactly the same way</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="example1">
+            <h2>Example 1: Removing Unreachable States</h2>
+            <div class="example-box">
+                <h3>Before Minimization:</h3>
+                <!-- Insert Before DFA Diagram Here -->
+                <div class="dfa-diagram">
+                    <div class="diagram-placeholder">
+                        [DFA Diagram: Shows state q3 that can't be reached from start state q0]
+                    </div>
+                </div>
+
+                <h3>After Removing Unreachable State:</h3>
+                <!-- Insert After DFA Diagram Here -->
+                <div class="dfa-diagram">
+                    <div class="diagram-placeholder">
+                        [DFA Diagram: Same DFA without state q3]
+                    </div>
+                </div>
+
+                <div class="explanation">
+                    <p>Notice how state q3 was removed because there was no way to reach it from the start state q0!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="example2">
+            <h2>Example 2: Merging Equivalent States</h2>
+            <div class="example-box">
+                <h3>Before Merging:</h3>
+                <div class="transition-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>State</th>
+                                <th>Input: 0</th>
+                                <th>Input: 1</th>
+                                <th>Accepting?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>→q0</td>
+                                <td>q1</td>
+                                <td>q2</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>q1</td>
+                                <td>q3</td>
+                                <td>q2</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>q2</td>
+                                <td>q3</td>
+                                <td>q2</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>q3</td>
+                                <td>q3</td>
+                                <td>q2</td>
+                                <td>Yes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="hint-box">
+                    <h4>💡 Notice:</h4>
+                    <p>States q1, q2, and q3 all:</p>
+                    <ul>
+                        <li>Are accepting states</li>
+                        <li>Go to the same states on each input</li>
+                        <li>Can be merged into one state!</li>
+                    </ul>
+                </div>
+
+                <h3>After Merging:</h3>
+                <div class="transition-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>State</th>
+                                <th>Input: 0</th>
+                                <th>Input: 1</th>
+                                <th>Accepting?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>→q0</td>
+                                <td>q1</td>
+                                <td>q1</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>*q1</td>
+                                <td>q1</td>
+                                <td>q1</td>
+                                <td>Yes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="try-yourself">
+            <h2>🎯 Try It Yourself!</h2>
+            <div class="challenge-box">
+                <h3>Practice Challenge:</h3>
+                <p>Try minimizing this DFA:</p>
+                <!-- Insert Practice DFA Diagram Here -->
+                <div class="dfa-diagram">
+                    <div class="diagram-placeholder">
+                        [DFA Diagram: Simple 4-state DFA with obvious equivalent states]
+                    </div>
+                </div>
+                <a href="/tools.html" class="tool-link">
+                    Use our DFA Simulator to check your answer! →
+                </a>
+            </div>
+        </section>
+
+        <section id="real-world">
+            <h2>🌟 Why Does This Matter?</h2>
+            <div class="applications-box">
+                <ul>
+                    <li>Makes pattern matching in text editors faster</li>
+                    <li>Reduces memory usage in lexical analyzers</li>
+                    <li>Optimizes regular expression engines</li>
+                    <li>Simplifies digital circuit design</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="summary">
+            <h2>Quick Summary</h2>
+            <div class="summary-box">
+                <p>DFA minimization is like spring cleaning - remove what you can't reach (unreachable states) and combine what's duplicate (equivalent states). The result is a simpler, more efficient DFA that does exactly the same job!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="article-footer">
+        <div class="navigation-links">
+            <a href="/articles/dfa/dfa-basics.html" class="prev-article">← Previous: DFA Basics</a>
+            <a href="/articles/dfa/dfa-examples.html" class="next-article">Next: More DFA Examples →</a>
+        </div>
+        <div class="article-feedback">
+            <p>Was this article helpful?</p>
+            <button class="feedback-btn"><i class="ri-thumb-up-line"></i></button>
+            <button class="feedback-btn"><i class="ri-thumb-down-line"></i></button>
+        </div>
+    </footer>
+</body>
+</html> 

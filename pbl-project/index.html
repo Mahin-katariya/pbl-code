@@ -1,0 +1,1761 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/styles/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+        <nav class="glassnav">
+            <!-- Logo Section -->
+            <div class="nav-logo">
+                <i class="ri-code-box-fill"></i>
+                <span class="logo-text">AutomataLab</span>
+            </div>
+    
+            <!-- Main Navigation -->
+            <div class="nav-group">
+                <div class="nav-section">
+                    <div class="section-title">Main</div>
+                    <a href="/" class="nav-item active">
+                        <i class="ri-home-5-line"></i>
+                        <span>Dashboard</span>
+                    </a>
+                    <a href="/notes.html" class="nav-item">
+                        <i class="ri-book-2-line"></i>
+                        <span>Learning Path</span>
+                    </a>
+                    <a href="/tools.html" class="nav-item">
+                        <i class="ri-flow-chart"></i>
+                        <span>Automata Lab</span>
+                    </a>
+                </div>
+    
+                <div class="nav-section">
+                    <div class="section-title">Tools</div>
+                    <a href="/simulator.html" class="nav-item">
+                        <i class="ri-cpu-line"></i>
+                        <span>Simulator</span>
+                    </a>
+                    <a href="/community.html" class="nav-item">
+                        <i class="ri-team-line"></i>
+                        <span>Community</span>
+                    </a>
+                </div>
+            </div>
+    
+            <!-- User Section -->
+            <div class="nav-bottom">
+                <div class="nav-section">
+                    <a href="/settings.html" class="nav-item">
+                        <i class="ri-settings-3-line"></i>
+                        <span>Settings</span>
+                    </a>
+                    <div class="user-profile">
+                        <img src="/assets/images/Screenshot 2025-04-15 141037.png" alt="User Profile" class="profile-img">
+                        <div class="user-info">
+                            <span class="user-name">Raunak Warrier</span>
+                            <span class="user-status">Student</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-toggle">
+                <i class="ri-menu-line"></i>
+            </button>
+        </nav>
+      
+      <main>
+        <div class="introduction">
+          <h1>Master Automata & Compiler Design | AutomataHub</h1>
+          <div class="hero-section">
+            <div class="hero-content">
+              <p class="tagline">Your structured path to mastering Theory of Computation</p>
+              <p class="description">
+                This platform is designed for students who want to learn Automata
+                and Compiler Design from A to Z in a well-structured, intuitive, and
+                completely free manner.
+              </p>
+              <div class="cta-buttons">
+                <button class="primary-btn">Start Learning</button>
+                <button class="secondary-btn">View Roadmap</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="features-grid">
+            <!-- Structured Notes Card -->
+            <a href="/notes.html" class="feature-card">
+                <i class="ri-book-open-line"></i>
+                <h3>Structured Notes</h3>
+                <p>Comprehensive theory notes with examples and explanations</p>
+                <span class="card-link">
+                    Explore Notes
+                    <i class="ri-arrow-right-line"></i>
+                </span>
+            </a>
+
+            <!-- Interactive Tools Card -->
+            <a href="/tools.html" class="feature-card">
+                <i class="ri-tools-line"></i>
+                <h3>Interactive Tools</h3>
+                <p>Visual tools for automata design and simulation</p>
+                <span class="card-link">
+                    Try Tools
+                    <i class="ri-arrow-right-line"></i>
+                </span>
+            </a>
+
+            <!-- Community Card -->
+            <a href="/community.html" class="feature-card">
+                <i class="ri-team-line"></i>
+                <h3>Community</h3>
+                <p>Connect with peers and discuss concepts</p>
+                <span class="card-link">
+                    Join Community
+                    <i class="ri-arrow-right-line"></i>
+                </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="progress-section">
+          <div class="progress-header">
+            <h2>Your Learning Journey</h2>
+            <span class="progress-percentage">0% complete</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 0%"></div>
+          </div>
+          <div class="progress-stats">
+            <div class="stat-item">
+              <span class="stat-number">0</span>
+              <span class="stat-label">Topics Completed</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">0</span>
+              <span class="stat-label">Problems Solved</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">0</span>
+              <span class="stat-label">Days Streak</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-content">
+          <h2>Course Curriculum</h2>
+          <div class="accordion">
+            <div class="accordion-container">
+                <h3>Finite Automata</h3>
+                <i class="ri-arrow-down-s-line"></i>
+            </div>
+            <div class="accordion-content">
+                
+                <!-- Nested Accordions -->
+                <div class="nested-accordion">
+                    <div class="nested-header">
+                        <h4>DFA - Deterministic Finite Automata</h4>
+                        <i class="ri-arrow-down-s-line"></i>
+                    </div>
+                    <div class="nested-content">
+                        <div class="topic-table-container">
+                            <table class="topic-table">
+                                <colgroup>
+                                    <col style="width: 60px;">  <!-- Status -->
+                                    <col style="width: 200px;"> <!-- Problem -->
+                                    <col style="width: 80px;">  <!-- Article -->
+                                    <col style="width: 80px;">  <!-- YouTube -->
+                                    <col style="width: 80px;">  <!-- Practice -->
+                                    <col style="width: 80px;">  <!-- Note -->
+                                    <col style="width: 100px;"> <!-- Difficulty -->
+                                    <col style="width: 80px;">  <!-- Revision -->
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="bordered">Status</th>
+                                        <th class="bordered">Problem</th>
+                                        <th class="bordered">Article</th>
+                                        <th class="bordered">YouTube</th>
+                                        <th class="bordered">Practice</th>
+                                        <th class="bordered">Note</th>
+                                        <th class="bordered">Difficulty</th>
+                                        <th class="bordered">Revision</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Row 1 -->
+                                    <tr class="topic-row">
+                                        <td><input type="checkbox" class="status-checkbox"></td>
+                                        <td class="problem-name">Introduction to DFA</td>
+                                        <td><a href="/articles/dfa/dfa-basics.html" target="_blank" class="resource-link"><i class="ri-article-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-youtube-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-code-line"></i></a></td>
+                                        <td><button class="note-btn"><i class="ri-add-line"></i></button></td>
+                                        <td><span class="difficulty easy">Easy</span></td>
+                                        <td><button class="revision-star"><i class="ri-star-line"></i></button></td>
+                                    </tr>
+                                    <!-- Row 2 -->
+                                    <!-- <tr class="topic-row">
+                                        <td><input type="checkbox" class="status-checkbox"></td>
+                                        <td class="problem-name">DFA State Transitions</td>
+                                        <td><a href="/articles/dfa/dfa-even-zeros.html" target="_blank" class="resource-link"><i class="ri-article-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-youtube-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-code-line"></i></a></td>
+                                        <td><button class="note-btn"><i class="ri-add-line"></i></button></td>
+                                        <td><span class="difficulty easy">Easy</span></td>
+                                        <td><button class="revision-star"><i class="ri-star-line"></i></button></td>
+                                    </tr> -->
+                                    <!-- Row 3 -->
+                                    <!-- <tr class="topic-row">
+                                        <td><input type="checkbox" class="status-checkbox"></td>
+                                        <td class="problem-name">Accepting and Rejecting States</td>
+                                        <td><a href="/articles/dfa/dfa-string-ending-01.html" target="_blank" class="resource-link"><i class="ri-article-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-youtube-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-code-line"></i></a></td>
+                                        <td><button class="note-btn"><i class="ri-add-line"></i></button></td>
+                                        <td><span class="difficulty medium">Medium</span></td>
+                                        <td><button class="revision-star"><i class="ri-star-line"></i></button></td>
+                                    </tr> -->
+                                    <!-- Row 4 -->
+                                    <tr class="topic-row">
+                                        <td><input type="checkbox" class="status-checkbox"></td>
+                                        <td class="problem-name">DFA for Even Binary Numbers</td>
+                                        <td><a href="/articles/dfa/dfa-divisible-by-2.html" target="_blank" class="resource-link"><i class="ri-article-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-youtube-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-code-line"></i></a></td>
+                                        <td><button class="note-btn"><i class="ri-add-line"></i></button></td>
+                                        <td><span class="difficulty medium">Medium</span></td>
+                                        <td><button class="revision-star"><i class="ri-star-line"></i></button></td>
+                                    </tr>
+                                    <!-- Row 5 -->
+                                    <tr class="topic-row">
+                                        <td><input type="checkbox" class="status-checkbox"></td>
+                                        <td class="problem-name">DFA Minimization</td>
+                                        <td><a href="/articles/dfa/dfa-minimization.html" target="_blank" class="resource-link"><i class="ri-article-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-youtube-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-code-line"></i></a></td>
+                                        <td><button class="note-btn"><i class="ri-add-line"></i></button></td>
+                                        <td><span class="difficulty hard">Hard</span></td>
+                                        <td><button class="revision-star"><i class="ri-star-line"></i></button></td>
+                                    </tr>
+                                    <!-- Row 6 -->
+                                    <!-- <tr class="topic-row">
+                                        <td><input type="checkbox" class="status-checkbox"></td>
+                                        <td class="problem-name">DFA for Pattern Matching</td>
+                                        <td><a href="/articles/dfa/dfa-binary-palindrome.html" target="_blank" class="resource-link"><i class="ri-article-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-youtube-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-code-line"></i></a></td>
+                                        <td><button class="note-btn"><i class="ri-add-line"></i></button></td>
+                                        <td><span class="difficulty medium">Medium</span></td>
+                                        <td><button class="revision-star"><i class="ri-star-line"></i></button></td>
+                                    </tr> -->
+                                    <!-- Row 7 -->
+                                    <tr class="topic-row">
+                                        <td><input type="checkbox" class="status-checkbox"></td>
+                                        <td class="problem-name">Complement of DFA</td>
+                                        <td><a href="/articles/dfa/complement-of-DFA.html" target="_blank" class="resource-link"><i class="ri-article-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-youtube-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-code-line"></i></a></td>
+                                        <td><button class="note-btn"><i class="ri-add-line"></i></button></td>
+                                        <td><span class="difficulty medium">Medium</span></td>
+                                        <td><button class="revision-star"><i class="ri-star-line"></i></button></td>
+                                    </tr>
+                                    <!-- Row 8 -->
+                                    <!-- <tr class="topic-row">
+                                        <td><input type="checkbox" class="status-checkbox"></td>
+                                        <td class="problem-name">Union and Intersection of DFAs</td>
+                                        <td><a href="/articles/dfa/dfa-alternating-bits.html" target="_blank" class="resource-link"><i class="ri-article-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-youtube-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-code-line"></i></a></td>
+                                        <td><button class="note-btn"><i class="ri-add-line"></i></button></td>
+                                        <td><span class="difficulty hard">Hard</span></td>
+                                        <td><button class="revision-star"><i class="ri-star-line"></i></button></td>
+                                    </tr>
+                                    <!-- Row 9 -->
+                                    <!-- <tr class="topic-row">
+                                        <td><input type="checkbox" class="status-checkbox"></td>
+                                        <td class="problem-name">DFA State Equivalence</td>
+                                        <td><a href="/articles/dfa/dfa-modulo-operation.html" target="_blank" class="resource-link"><i class="ri-article-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-youtube-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-code-line"></i></a></td>
+                                        <td><button class="note-btn"><i class="ri-add-line"></i></button></td>
+                                        <td><span class="difficulty hard">Hard</span></td>
+                                        <td><button class="revision-star"><i class="ri-star-line"></i></button></td>
+                                    </tr> --> 
+                                    <!-- Row 10 -->
+                                    <tr class="topic-row">
+                                        <td><input type="checkbox" class="status-checkbox"></td>
+                                        <td class="problem-name">Advanced DFA Problems</td>
+                                        <td><a href="/articles/dfa/dfa-questions.html" target="_blank" class="resource-link"><i class="ri-article-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-youtube-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-code-line"></i></a></td>
+                                        <td><button class="note-btn"><i class="ri-add-line"></i></button></td>
+                                        <td><span class="difficulty hard">Hard</span></td>
+                                        <td><button class="revision-star"><i class="ri-star-line"></i></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+    
+                
+                <div class="nested-accordion">
+                    <div class="nested-header">
+                        <h4>NFA - Non-Deterministic Finite Automata</h4>
+                        <i class="ri-arrow-down-s-line"></i>
+                    </div>
+                    <div class="nested-content">
+                        <div class="topic-table-container">
+                            <table class="topic-table">
+                                <colgroup>
+                                    <col style="width: 60px;">  <!-- Status -->
+                                    <col style="width: 200px;"> <!-- Problem -->
+                                    <col style="width: 80px;">  <!-- Article -->
+                                    <col style="width: 80px;">  <!-- YouTube -->
+                                    <col style="width: 80px;">  <!-- Practice -->
+                                    <col style="width: 80px;">  <!-- Note -->
+                                    <col style="width: 100px;"> <!-- Difficulty -->
+                                    <col style="width: 80px;">  <!-- Revision -->
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="bordered">Status</th>
+                                        <th class="bordered">Problem</th>
+                                        <th class="bordered">Article</th>
+                                        <th class="bordered">YouTube</th>
+                                        <th class="bordered">Practice</th>
+                                        <th class="bordered">Note</th>
+                                        <th class="bordered">Difficulty</th>
+                                        <th class="bordered">Revision</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="topic-row">
+                                        <td>
+                                            <input type="checkbox" class="status-checkbox">
+                                        </td>
+                                        <td class="problem-name">Introduction to NFA</td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-article-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-youtube-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-code-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <button class="note-btn">
+                                                <i class="ri-add-line"></i>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <span class="difficulty easy">Easy</span>
+                                        </td>
+                                        <td>
+                                            <button class="revision-star">
+                                                <i class="ri-star-line"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <!-- Row 2 -->
+                                    <tr class="topic-row">
+                                        <td><input type="checkbox" class="status-checkbox"></td>
+                                        <td class="problem-name">NFA State Transitions</td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-article-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-youtube-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-code-line"></i></a></td>
+                                        <td><button class="note-btn"><i class="ri-add-line"></i></button></td>
+                                        <td><span class="difficulty easy">Easy</span></td>
+                                        <td><button class="revision-star"><i class="ri-star-line"></i></button></td>
+                                    </tr>
+                                    <!-- Row 3 -->
+                                    <tr class="topic-row">
+                                        <td><input type="checkbox" class="status-checkbox"></td>
+                                        <td class="problem-name">ε-Transitions in NFA</td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-article-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-youtube-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-code-line"></i></a></td>
+                                        <td><button class="note-btn"><i class="ri-add-line"></i></button></td>
+                                        <td><span class="difficulty medium">Medium</span></td>
+                                        <td><button class="revision-star"><i class="ri-star-line"></i></button></td>
+                                    </tr>
+                                    <!-- Row 4 -->
+                                    <tr class="topic-row">
+                                        <td><input type="checkbox" class="status-checkbox"></td>
+                                        <td class="problem-name">NFA to DFA Conversion</td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-article-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-youtube-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-code-line"></i></a></td>
+                                        <td><button class="note-btn"><i class="ri-add-line"></i></button></td>
+                                        <td><span class="difficulty hard">Hard</span></td>
+                                        <td><button class="revision-star"><i class="ri-star-line"></i></button></td>
+                                    </tr>
+                                    <!-- Row 5 -->
+                                    <tr class="topic-row">
+                                        <td><input type="checkbox" class="status-checkbox"></td>
+                                        <td class="problem-name">Subset Construction Method</td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-article-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-youtube-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-code-line"></i></a></td>
+                                        <td><button class="note-btn"><i class="ri-add-line"></i></button></td>
+                                        <td><span class="difficulty hard">Hard</span></td>
+                                        <td><button class="revision-star"><i class="ri-star-line"></i></button></td>
+                                    </tr>
+                                    <!-- Row 6 -->
+                                    <tr class="topic-row">
+                                        <td><input type="checkbox" class="status-checkbox"></td>
+                                        <td class="problem-name">NFA Pattern Matching</td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-article-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-youtube-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-code-line"></i></a></td>
+                                        <td><button class="note-btn"><i class="ri-add-line"></i></button></td>
+                                        <td><span class="difficulty medium">Medium</span></td>
+                                        <td><button class="revision-star"><i class="ri-star-line"></i></button></td>
+                                    </tr>
+                                    <!-- Row 7 -->
+                                    <tr class="topic-row">
+                                        <td><input type="checkbox" class="status-checkbox"></td>
+                                        <td class="problem-name">ε-Closure Computation</td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-article-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-youtube-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-code-line"></i></a></td>
+                                        <td><button class="note-btn"><i class="ri-add-line"></i></button></td>
+                                        <td><span class="difficulty medium">Medium</span></td>
+                                        <td><button class="revision-star"><i class="ri-star-line"></i></button></td>
+                                    </tr>
+                                    <!-- Row 8 -->
+                                    <tr class="topic-row">
+                                        <td><input type="checkbox" class="status-checkbox"></td>
+                                        <td class="problem-name">NFA Minimization</td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-article-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-youtube-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-code-line"></i></a></td>
+                                        <td><button class="note-btn"><i class="ri-add-line"></i></button></td>
+                                        <td><span class="difficulty hard">Hard</span></td>
+                                        <td><button class="revision-star"><i class="ri-star-line"></i></button></td>
+                                    </tr>
+                                    <!-- Row 9 -->
+                                    <tr class="topic-row">
+                                        <td><input type="checkbox" class="status-checkbox"></td>
+                                        <td class="problem-name">Regular Expression to NFA</td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-article-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-youtube-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-code-line"></i></a></td>
+                                        <td><button class="note-btn"><i class="ri-add-line"></i></button></td>
+                                        <td><span class="difficulty hard">Hard</span></td>
+                                        <td><button class="revision-star"><i class="ri-star-line"></i></button></td>
+                                    </tr>
+                                    <!-- Row 10 -->
+                                    <tr class="topic-row">
+                                        <td><input type="checkbox" class="status-checkbox"></td>
+                                        <td class="problem-name">Advanced NFA Problems</td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-article-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-youtube-line"></i></a></td>
+                                        <td><a href="#" target="_blank" class="resource-link"><i class="ri-code-line"></i></a></td>
+                                        <td><button class="note-btn"><i class="ri-add-line"></i></button></td>
+                                        <td><span class="difficulty hard">Hard</span></td>
+                                        <td><button class="revision-star"><i class="ri-star-line"></i></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="nested-accordion">
+                  <div class="nested-header">
+                      <h4>Mealy and Moore Machines - construction and Equivalence</h4>
+                      <i class="ri-arrow-down-s-line"></i>
+                  </div>
+                  <div class="nested-content">
+                      <div class="topic-table-container">
+                          <table class="topic-table">
+                              <colgroup>
+                                  <col style="width: 60px;">
+                                  <col style="width: 200px;">
+                                  <col style="width: 80px;">
+                                  <col style="width: 80px;">
+                                  <col style="width: 80px;">
+                                  <col style="width: 80px;">
+                                  <col style="width: 100px;">
+                                  <col style="width: 80px;">
+                              </colgroup>
+                              <thead>
+                                  <tr>
+                                      <th class="bordered">Status</th>
+                                      <th class="bordered">Problem</th>
+                                      <th class="bordered">Article</th>
+                                      <th class="bordered">YouTube</th>
+                                      <th class="bordered">Practice</th>
+                                      <th class="bordered">Note</th>
+                                      <th class="bordered">Difficulty</th>
+                                      <th class="bordered">Revision</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr class="topic-row">
+                                      <td>
+                                          <input type="checkbox" class="status-checkbox">
+                                      </td>
+                                      <td class="problem-name">Introduction to Mealy Machines</td>
+                                      <td>
+                                          <a href="#" target="_blank" class="resource-link">
+                                              <i class="ri-article-line"></i>
+                                          </a>
+                                      </td>
+                                      <td>
+                                          <a href="#" target="_blank" class="resource-link">
+                                              <i class="ri-youtube-line"></i>
+                                          </a>
+                                      </td>
+                                      <td>
+                                          <a href="#" target="_blank" class="resource-link">
+                                              <i class="ri-code-line"></i>
+                                          </a>
+                                      </td>
+                                      <td>
+                                          <button class="note-btn">
+                                              <i class="ri-add-line"></i>
+                                          </button>
+                                      </td>
+                                      <td>
+                                          <span class="difficulty easy">Easy</span>
+                                      </td>
+                                      <td>
+                                          <button class="revision-star">
+                                              <i class="ri-star-line"></i>
+                                          </button>
+                                      </td>
+                                  </tr>
+                                  <!-- Row 2 -->
+                                  <tr class="topic-row">
+                                      <td><input type="checkbox" class="status-checkbox"></td>
+                                      <td class="problem-name">Introduction to Moore Machines</td>
+                                      <td><a href="#" target="_blank" class="resource-link"><i class="ri-article-line"></i></a></td>
+                                      <td><a href="#" target="_blank" class="resource-link"><i class="ri-youtube-line"></i></a></td>
+                                      <td><a href="#" target="_blank" class="resource-link"><i class="ri-code-line"></i></a></td>
+                                      <td><button class="note-btn"><i class="ri-add-line"></i></button></td>
+                                      <td><span class="difficulty easy">Easy</span></td>
+                                      <td><button class="revision-star"><i class="ri-star-line"></i></button></td>
+                                  </tr>
+                                  <!-- Row 3 -->
+                                  <tr class="topic-row">
+                                      <td><input type="checkbox" class="status-checkbox"></td>
+                                      <td class="problem-name">Mealy Machine State Diagram</td>
+                                      <td><a href="#" target="_blank" class="resource-link"><i class="ri-article-line"></i></a></td>
+                                      <td><a href="#" target="_blank" class="resource-link"><i class="ri-youtube-line"></i></a></td>
+                                      <td><a href="#" target="_blank" class="resource-link"><i class="ri-code-line"></i></a></td>
+                                      <td><button class="note-btn"><i class="ri-add-line"></i></button></td>
+                                      <td><span class="difficulty medium">Medium</span></td>
+                                      <td><button class="revision-star"><i class="ri-star-line"></i></button></td>
+                                  </tr>
+                                  <!-- Row 4 -->
+                                  <tr class="topic-row">
+                                      <td><input type="checkbox" class="status-checkbox"></td>
+                                      <td class="problem-name">Moore Machine State Diagram</td>
+                                      <td><a href="#" target="_blank" class="resource-link"><i class="ri-article-line"></i></a></td>
+                                      <td><a href="#" target="_blank" class="resource-link"><i class="ri-youtube-line"></i></a></td>
+                                      <td><a href="#" target="_blank" class="resource-link"><i class="ri-code-line"></i></a></td>
+                                      <td><button class="note-btn"><i class="ri-add-line"></i></button></td>
+                                      <td><span class="difficulty medium">Medium</span></td>
+                                      <td><button class="revision-star"><i class="ri-star-line"></i></button></td>
+                                  </tr>
+                                  <!-- Row 5 -->
+                                  <tr class="topic-row">
+                                      <td><input type="checkbox" class="status-checkbox"></td>
+                                      <td class="problem-name">Mealy to Moore Conversion</td>
+                                      <td><a href="#" target="_blank" class="resource-link"><i class="ri-article-line"></i></a></td>
+                                      <td><a href="#" target="_blank" class="resource-link"><i class="ri-youtube-line"></i></a></td>
+                                      <td><a href="#" target="_blank" class="resource-link"><i class="ri-code-line"></i></a></td>
+                                      <td><button class="note-btn"><i class="ri-add-line"></i></button></td>
+                                      <td><span class="difficulty hard">Hard</span></td>
+                                      <td><button class="revision-star"><i class="ri-star-line"></i></button></td>
+                                  </tr>
+                                  <!-- Row 6 -->
+                                  <tr class="topic-row">
+                                      <td><input type="checkbox" class="status-checkbox"></td>
+                                      <td class="problem-name">Moore to Mealy Conversion</td>
+                                      <td><a href="#" target="_blank" class="resource-link"><i class="ri-article-line"></i></a></td>
+                                      <td><a href="#" target="_blank" class="resource-link"><i class="ri-youtube-line"></i></a></td>
+                                      <td><a href="#" target="_blank" class="resource-link"><i class="ri-code-line"></i></a></td>
+                                      <td><button class="note-btn"><i class="ri-add-line"></i></button></td>
+                                      <td><span class="difficulty hard">Hard</span></td>
+                                      <td><button class="revision-star"><i class="ri-star-line"></i></button></td>
+                                  </tr>
+                                  <!-- Row 7 -->
+                                  <tr class="topic-row">
+                                      <td><input type="checkbox" class="status-checkbox"></td>
+                                      <td class="problem-name">Minimization Techniques</td>
+                                      <td><a href="#" target="_blank" class="resource-link"><i class="ri-article-line"></i></a></td>
+                                      <td><a href="#" target="_blank" class="resource-link"><i class="ri-youtube-line"></i></a></td>
+                                      <td><a href="#" target="_blank" class="resource-link"><i class="ri-code-line"></i></a></td>
+                                      <td><button class="note-btn"><i class="ri-add-line"></i></button></td>
+                                      <td><span class="difficulty hard">Hard</span></td>
+                                      <td><button class="revision-star"><i class="ri-star-line"></i></button></td>
+                                  </tr>
+                                  <!-- Row 8 -->
+                                  <tr class="topic-row">
+                                      <td><input type="checkbox" class="status-checkbox"></td>
+                                      <td class="problem-name">Equivalence Testing</td>
+                                      <td><a href="#" target="_blank" class="resource-link"><i class="ri-article-line"></i></a></td>
+                                      <td><a href="#" target="_blank" class="resource-link"><i class="ri-youtube-line"></i></a></td>
+                                      <td><a href="#" target="_blank" class="resource-link"><i class="ri-code-line"></i></a></td>
+                                      <td><button class="note-btn"><i class="ri-add-line"></i></button></td>
+                                      <td><span class="difficulty hard">Hard</span></td>
+                                      <td><button class="revision-star"><i class="ri-star-line"></i></button></td>
+                                  </tr>
+                                  <!-- Row 9 -->
+                                  <tr class="topic-row">
+                                      <td><input type="checkbox" class="status-checkbox"></td>
+                                      <td class="problem-name">Applications and Examples</td>
+                                      <td><a href="#" target="_blank" class="resource-link"><i class="ri-article-line"></i></a></td>
+                                      <td><a href="#" target="_blank" class="resource-link"><i class="ri-youtube-line"></i></a></td>
+                                      <td><a href="#" target="_blank" class="resource-link"><i class="ri-code-line"></i></a></td>
+                                      <td><button class="note-btn"><i class="ri-add-line"></i></button></td>
+                                      <td><span class="difficulty medium">Medium</span></td>
+                                      <td><button class="revision-star"><i class="ri-star-line"></i></button></td>
+                                  </tr>
+                                  <!-- Row 10 -->
+                                  <tr class="topic-row">
+                                      <td><input type="checkbox" class="status-checkbox"></td>
+                                      <td class="problem-name">Advanced Machine Problems</td>
+                                      <td><a href="#" target="_blank" class="resource-link"><i class="ri-article-line"></i></a></td>
+                                      <td><a href="#" target="_blank" class="resource-link"><i class="ri-youtube-line"></i></a></td>
+                                      <td><a href="#" target="_blank" class="resource-link"><i class="ri-code-line"></i></a></td>
+                                      <td><button class="note-btn"><i class="ri-add-line"></i></button></td>
+                                      <td><span class="difficulty hard">Hard</span></td>
+                                      <td><button class="revision-star"><i class="ri-star-line"></i></button></td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="accordion">
+            <div class="accordion-container">
+                <h3>Step 2: Regular Sets and Regular Grammars</h3>
+                <i class="ri-arrow-down-s-line"></i>
+            </div>
+            <div class="accordion-content">
+                
+                <div class="nested-accordion">
+                    <div class="nested-header">
+                        <h4>Regular Expressions and Regular Languages</h4>
+                        <i class="ri-arrow-down-s-line"></i>
+                    </div>
+                    <div class="nested-content">
+                        <div class="topic-table-container">
+                            <table class="topic-table">
+                                <colgroup>
+                                    <col style="width: 60px;">
+                                    <col style="width: 200px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 100px;">
+                                    <col style="width: 80px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="bordered">Status</th>
+                                        <th class="bordered">Problem</th>
+                                        <th class="bordered">Article</th>
+                                        <th class="bordered">YouTube</th>
+                                        <th class="bordered">Practice</th>
+                                        <th class="bordered">Note</th>
+                                        <th class="bordered">Difficulty</th>
+                                        <th class="bordered">Revision</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="topic-row">
+                                        <td>
+                                            <input type="checkbox" class="status-checkbox">
+                                        </td>
+                                        <td class="problem-name">Regular Expression Basics</td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-article-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-youtube-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-code-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <button class="note-btn">
+                                                <i class="ri-add-line"></i>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <span class="difficulty easy">Easy</span>
+                                        </td>
+                                        <td>
+                                            <button class="revision-star">
+                                                <i class="ri-star-line"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="nested-accordion">
+                    <div class="nested-header">
+                        <h4>Regular Grammars and Finite Automata Equivalence</h4>
+                        <i class="ri-arrow-down-s-line"></i>
+                    </div>
+                    <div class="nested-content">
+                        <div class="topic-table-container">
+                            <table class="topic-table">
+                                <colgroup>
+                                    <col style="width: 60px;">
+                                    <col style="width: 200px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 100px;">
+                                    <col style="width: 80px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="bordered">Status</th>
+                                        <th class="bordered">Problem</th>
+                                        <th class="bordered">Article</th>
+                                        <th class="bordered">YouTube</th>
+                                        <th class="bordered">Practice</th>
+                                        <th class="bordered">Note</th>
+                                        <th class="bordered">Difficulty</th>
+                                        <th class="bordered">Revision</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="topic-row">
+                                        <td>
+                                            <input type="checkbox" class="status-checkbox">
+                                        </td>
+                                        <td class="problem-name">Grammar Equivalence</td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-article-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-youtube-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-code-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <button class="note-btn">
+                                                <i class="ri-add-line"></i>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <span class="difficulty medium">Medium</span>
+                                        </td>
+                                        <td>
+                                            <button class="revision-star">
+                                                <i class="ri-star-line"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nested-accordion">
+                  <div class="nested-header">
+                      <h4>Closure Properties of Regular Languages</h4>
+                      <i class="ri-arrow-down-s-line"></i>
+                  </div>
+                  <div class="nested-content">
+                      <div class="topic-table-container">
+                          <table class="topic-table">
+                              <colgroup>
+                                  <col style="width: 60px;">
+                                  <col style="width: 200px;">
+                                  <col style="width: 80px;">
+                                  <col style="width: 80px;">
+                                  <col style="width: 80px;">
+                                  <col style="width: 80px;">
+                                  <col style="width: 100px;">
+                                  <col style="width: 80px;">
+                              </colgroup>
+                              <thead>
+                                  <tr>
+                                      <th class="bordered">Status</th>
+                                      <th class="bordered">Problem</th>
+                                      <th class="bordered">Article</th>
+                                      <th class="bordered">YouTube</th>
+                                      <th class="bordered">Practice</th>
+                                      <th class="bordered">Note</th>
+                                      <th class="bordered">Difficulty</th>
+                                      <th class="bordered">Revision</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr class="topic-row">
+                                      <td>
+                                          <input type="checkbox" class="status-checkbox">
+                                      </td>
+                                      <td class="problem-name">Closure Properties</td>
+                                      <td>
+                                          <a href="#" target="_blank" class="resource-link">
+                                              <i class="ri-article-line"></i>
+                                          </a>
+                                      </td>
+                                      <td>
+                                          <a href="#" target="_blank" class="resource-link">
+                                              <i class="ri-youtube-line"></i>
+                                          </a>
+                                      </td>
+                                      <td>
+                                          <a href="#" target="_blank" class="resource-link">
+                                              <i class="ri-code-line"></i>
+                                          </a>
+                                      </td>
+                                      <td>
+                                          <button class="note-btn">
+                                              <i class="ri-add-line"></i>
+                                          </button>
+                                      </td>
+                                      <td>
+                                          <span class="difficulty hard">Hard</span>
+                                      </td>
+                                      <td>
+                                          <button class="revision-star">
+                                              <i class="ri-star-line"></i>
+                                          </button>
+                                      </td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="nested-accordion">
+                <div class="nested-header">
+                    <h4>Pumping Lemma for Regular Languages</h4>
+                    <i class="ri-arrow-down-s-line"></i>
+                </div>
+                <div class="nested-content">
+                    <div class="topic-table-container">
+                        <table class="topic-table">
+                            <colgroup>
+                                <col style="width: 60px;">
+                                <col style="width: 200px;">
+                                <col style="width: 80px;">
+                                <col style="width: 80px;">
+                                <col style="width: 80px;">
+                                <col style="width: 80px;">
+                                <col style="width: 100px;">
+                                <col style="width: 80px;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="bordered">Status</th>
+                                    <th class="bordered">Problem</th>
+                                    <th class="bordered">Article</th>
+                                    <th class="bordered">YouTube</th>
+                                    <th class="bordered">Practice</th>
+                                    <th class="bordered">Note</th>
+                                    <th class="bordered">Difficulty</th>
+                                    <th class="bordered">Revision</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="topic-row">
+                                    <td>
+                                        <input type="checkbox" class="status-checkbox">
+                                    </td>
+                                    <td class="problem-name">Pumping Lemma</td>
+                                    <td>
+                                        <a href="#" target="_blank" class="resource-link">
+                                            <i class="ri-article-line"></i>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" target="_blank" class="resource-link">
+                                            <i class="ri-youtube-line"></i>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" target="_blank" class="resource-link">
+                                            <i class="ri-code-line"></i>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <button class="note-btn">
+                                            <i class="ri-add-line"></i>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <span class="difficulty hard">Hard</span>
+                                    </td>
+                                    <td>
+                                        <button class="revision-star">
+                                            <i class="ri-star-line"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-container">
+                <h3>Step 3: Context-Free Languages and Grammars</h3>
+                <i class="ri-arrow-down-s-line"></i>
+            </div>
+            <div class="accordion-content">
+                
+                <div class="nested-accordion">
+                    <div class="nested-header">
+                        <h4>Ambiguity, Methods of Transforming Grammars </h4>
+                        <i class="ri-arrow-down-s-line"></i>
+                    </div>
+                    <div class="nested-content">
+                        <div class="topic-table-container">
+                            <table class="topic-table">
+                                <colgroup>
+                                    <col style="width: 60px;">
+                                    <col style="width: 200px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 100px;">
+                                    <col style="width: 80px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="bordered">Status</th>
+                                        <th class="bordered">Problem</th>
+                                        <th class="bordered">Article</th>
+                                        <th class="bordered">YouTube</th>
+                                        <th class="bordered">Practice</th>
+                                        <th class="bordered">Note</th>
+                                        <th class="bordered">Difficulty</th>
+                                        <th class="bordered">Revision</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="topic-row">
+                                        <td>
+                                            <input type="checkbox" class="status-checkbox">
+                                        </td>
+                                        <td class="problem-name">Introduction to Ambiguity</td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-article-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-youtube-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-code-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <button class="note-btn">
+                                                <i class="ri-add-line"></i>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <span class="difficulty medium">Medium</span>
+                                        </td>
+                                        <td>
+                                            <button class="revision-star">
+                                                <i class="ri-star-line"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="nested-accordion">
+                    <div class="nested-header">
+                        <h4>Chomsky Normal Form (CFL)</h4>
+                        <i class="ri-arrow-down-s-line"></i>
+                    </div>
+                    <div class="nested-content">
+                        <div class="topic-table-container">
+                            <table class="topic-table">
+                                <colgroup>
+                                    <col style="width: 60px;">
+                                    <col style="width: 200px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 100px;">
+                                    <col style="width: 80px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="bordered">Status</th>
+                                        <th class="bordered">Problem</th>
+                                        <th class="bordered">Article</th>
+                                        <th class="bordered">YouTube</th>
+                                        <th class="bordered">Practice</th>
+                                        <th class="bordered">Note</th>
+                                        <th class="bordered">Difficulty</th>
+                                        <th class="bordered">Revision</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="topic-row">
+                                        <td>
+                                            <input type="checkbox" class="status-checkbox">
+                                        </td>
+                                        <td class="problem-name">CNF Conversion</td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-article-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-youtube-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-code-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <button class="note-btn">
+                                                <i class="ri-add-line"></i>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <span class="difficulty hard">Hard</span>
+                                        </td>
+                                        <td>
+                                            <button class="revision-star">
+                                                <i class="ri-star-line"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nested-accordion">
+                    <div class="nested-header">
+                        <h4>Griebach Normal Form (GNF)</h4>
+                        <i class="ri-arrow-down-s-line"></i>
+                    </div>
+                    <div class="nested-content">
+                        <div class="topic-table-container">
+                            <table class="topic-table">
+                                <colgroup>
+                                    <col style="width: 60px;">
+                                    <col style="width: 200px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 100px;">
+                                    <col style="width: 80px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="bordered">Status</th>
+                                        <th class="bordered">Problem</th>
+                                        <th class="bordered">Article</th>
+                                        <th class="bordered">YouTube</th>
+                                        <th class="bordered">Practice</th>
+                                        <th class="bordered">Note</th>
+                                        <th class="bordered">Difficulty</th>
+                                        <th class="bordered">Revision</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="topic-row">
+                                        <td>
+                                            <input type="checkbox" class="status-checkbox">
+                                        </td>
+                                        <td class="problem-name">GNF Basics</td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-article-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-youtube-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-code-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <button class="note-btn">
+                                                <i class="ri-add-line"></i>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <span class="difficulty hard">Hard</span>
+                                        </td>
+                                        <td>
+                                            <button class="revision-star">
+                                                <i class="ri-star-line"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-container">
+                <h3>Step 4: Push Down Automata</h3>
+                <i class="ri-arrow-down-s-line"></i>
+            </div>
+            <div class="accordion-content">
+                
+                <div class="nested-accordion">
+                    <div class="nested-header">
+                        <h4>Nondeterministic Pushdown Automata(NDPA), Design of NPDA</h4>
+                        <i class="ri-arrow-down-s-line"></i>
+                    </div>
+                    <div class="nested-content">
+                        <div class="topic-table-container">
+                            <table class="topic-table">
+                                <colgroup>
+                                    <col style="width: 60px;">
+                                    <col style="width: 200px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 100px;">
+                                    <col style="width: 80px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="bordered">Status</th>
+                                        <th class="bordered">Problem</th>
+                                        <th class="bordered">Article</th>
+                                        <th class="bordered">YouTube</th>
+                                        <th class="bordered">Practice</th>
+                                        <th class="bordered">Note</th>
+                                        <th class="bordered">Difficulty</th>
+                                        <th class="bordered">Revision</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="topic-row">
+                                        <td>
+                                            <input type="checkbox" class="status-checkbox">
+                                        </td>
+                                        <td class="problem-name">Stack-based Computation</td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-article-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-youtube-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-code-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <button class="note-btn">
+                                                <i class="ri-add-line"></i>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <span class="difficulty medium">Medium</span>
+                                        </td>
+                                        <td>
+                                            <button class="revision-star">
+                                                <i class="ri-star-line"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="nested-accordion">
+                    <div class="nested-header">
+                        <h4>Equivalence of PDA and CFL's</h4>
+                        <i class="ri-arrow-down-s-line"></i>
+                    </div>
+                    <div class="nested-content">
+                        <div class="topic-table-container">
+                            <table class="topic-table">
+                                <colgroup>
+                                    <col style="width: 60px;">
+                                    <col style="width: 200px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 100px;">
+                                    <col style="width: 80px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="bordered">Status</th>
+                                        <th class="bordered">Problem</th>
+                                        <th class="bordered">Article</th>
+                                        <th class="bordered">YouTube</th>
+                                        <th class="bordered">Practice</th>
+                                        <th class="bordered">Note</th>
+                                        <th class="bordered">Difficulty</th>
+                                        <th class="bordered">Revision</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="topic-row">
+                                        <td>
+                                            <input type="checkbox" class="status-checkbox">
+                                        </td>
+                                        <td class="problem-name">Conversion techniques and proofs</td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-article-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-youtube-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-code-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <button class="note-btn">
+                                                <i class="ri-add-line"></i>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <span class="difficulty hard">Hard</span>
+                                        </td>
+                                        <td>
+                                            <button class="revision-star">
+                                                <i class="ri-star-line"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nested-accordion">
+                    <div class="nested-header">
+                        <h4>Closure properties and decision problems of CFL's</h4>
+                        <i class="ri-arrow-down-s-line"></i>
+                    </div>
+                    <div class="nested-content">
+                        <div class="topic-table-container">
+                            <table class="topic-table">
+                                <colgroup>
+                                    <col style="width: 60px;">
+                                    <col style="width: 200px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 100px;">
+                                    <col style="width: 80px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="bordered">Status</th>
+                                        <th class="bordered">Problem</th>
+                                        <th class="bordered">Article</th>
+                                        <th class="bordered">YouTube</th>
+                                        <th class="bordered">Practice</th>
+                                        <th class="bordered">Note</th>
+                                        <th class="bordered">Difficulty</th>
+                                        <th class="bordered">Revision</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="topic-row">
+                                        <td>
+                                            <input type="checkbox" class="status-checkbox">
+                                        </td>
+                                        <td class="problem-name">Properties and theoretical aspects</td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-article-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-youtube-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-code-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <button class="note-btn">
+                                                <i class="ri-add-line"></i>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <span class="difficulty hard">Hard</span>
+                                        </td>
+                                        <td>
+                                            <button class="revision-star">
+                                                <i class="ri-star-line"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-container">
+                <h3>Step 5: Introduction to Turing Machine</h3>
+                <i class="ri-arrow-down-s-line"></i>
+            </div>
+            <div class="accordion-content">
+                
+                <div class="nested-accordion">
+                    <div class="nested-header">
+                        <h4>Definition, Turing Machining as Language acceptors, Types of Turing machine</h4>
+                        <i class="ri-arrow-down-s-line"></i>
+                    </div>
+                    <div class="nested-content">
+                        <div class="topic-table-container">
+                            <table class="topic-table">
+                                <colgroup>
+                                    <col style="width: 60px;">
+                                    <col style="width: 200px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 100px;">
+                                    <col style="width: 80px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="bordered">Status</th>
+                                        <th class="bordered">Problem</th>
+                                        <th class="bordered">Article</th>
+                                        <th class="bordered">YouTube</th>
+                                        <th class="bordered">Practice</th>
+                                        <th class="bordered">Note</th>
+                                        <th class="bordered">Difficulty</th>
+                                        <th class="bordered">Revision</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="topic-row">
+                                        <td>
+                                            <input type="checkbox" class="status-checkbox">
+                                        </td>
+                                        <td class="problem-name">Basic Turing Machine Concepts</td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-article-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-youtube-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-code-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <button class="note-btn">
+                                                <i class="ri-add-line"></i>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <span class="difficulty medium">Medium</span>
+                                        </td>
+                                        <td>
+                                            <button class="revision-star">
+                                                <i class="ri-star-line"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="nested-accordion">
+                    <div class="nested-header">
+                        <h4>Recursively Enumerable and Recursive Languages and their closure properties</h4>
+                        <i class="ri-arrow-down-s-line"></i>
+                    </div>
+                    <div class="nested-content">
+                        <div class="topic-table-container">
+                            <table class="topic-table">
+                                <colgroup>
+                                    <col style="width: 60px;">
+                                    <col style="width: 200px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 100px;">
+                                    <col style="width: 80px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="bordered">Status</th>
+                                        <th class="bordered">Problem</th>
+                                        <th class="bordered">Article</th>
+                                        <th class="bordered">YouTube</th>
+                                        <th class="bordered">Practice</th>
+                                        <th class="bordered">Note</th>
+                                        <th class="bordered">Difficulty</th>
+                                        <th class="bordered">Revision</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="topic-row">
+                                        <td>
+                                            <input type="checkbox" class="status-checkbox">
+                                        </td>
+                                        <td class="problem-name">Language Classifications</td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-article-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-youtube-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-code-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <button class="note-btn">
+                                                <i class="ri-add-line"></i>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <span class="difficulty hard">Hard</span>
+                                        </td>
+                                        <td>
+                                            <button class="revision-star">
+                                                <i class="ri-star-line"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nested-accordion">
+                    <div class="nested-header">
+                        <h4>Concept of insolvability & reducibility</h4>
+                        <i class="ri-arrow-down-s-line"></i>
+                    </div>
+                    <div class="nested-content">
+                        <div class="topic-table-container">
+                            <table class="topic-table">
+                                <colgroup>
+                                    <col style="width: 60px;">
+                                    <col style="width: 200px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 100px;">
+                                    <col style="width: 80px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="bordered">Status</th>
+                                        <th class="bordered">Problem</th>
+                                        <th class="bordered">Article</th>
+                                        <th class="bordered">YouTube</th>
+                                        <th class="bordered">Practice</th>
+                                        <th class="bordered">Note</th>
+                                        <th class="bordered">Difficulty</th>
+                                        <th class="bordered">Revision</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="topic-row">
+                                        <td>
+                                            <input type="checkbox" class="status-checkbox">
+                                        </td>
+                                        <td class="problem-name">Computational Limits</td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-article-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-youtube-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-code-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <button class="note-btn">
+                                                <i class="ri-add-line"></i>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <span class="difficulty hard">Hard</span>
+                                        </td>
+                                        <td>
+                                            <button class="revision-star">
+                                                <i class="ri-star-line"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nested-accordion">
+                    <div class="nested-header">
+                        <h4>Halting Problem, Post correspondence Problem</h4>
+                        <i class="ri-arrow-down-s-line"></i>
+                    </div>
+                    <div class="nested-content">
+                        <div class="topic-table-container">
+                            <table class="topic-table">
+                                <colgroup>
+                                    <col style="width: 60px;">
+                                    <col style="width: 200px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 100px;">
+                                    <col style="width: 80px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="bordered">Status</th>
+                                        <th class="bordered">Problem</th>
+                                        <th class="bordered">Article</th>
+                                        <th class="bordered">YouTube</th>
+                                        <th class="bordered">Practice</th>
+                                        <th class="bordered">Note</th>
+                                        <th class="bordered">Difficulty</th>
+                                        <th class="bordered">Revision</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="topic-row">
+                                        <td>
+                                            <input type="checkbox" class="status-checkbox">
+                                        </td>
+                                        <td class="problem-name">Undecidable Problems</td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-article-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-youtube-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-code-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <button class="note-btn">
+                                                <i class="ri-add-line"></i>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <span class="difficulty hard">Hard</span>
+                                        </td>
+                                        <td>
+                                            <button class="revision-star">
+                                                <i class="ri-star-line"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nested-accordion">
+                    <div class="nested-header">
+                        <h4>Rice theorem, P and NP</h4>
+                        <i class="ri-arrow-down-s-line"></i>
+                    </div>
+                    <div class="nested-content">
+                        <div class="topic-table-container">
+                            <table class="topic-table">
+                                <colgroup>
+                                    <col style="width: 60px;">
+                                    <col style="width: 200px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: 100px;">
+                                    <col style="width: 80px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="bordered">Status</th>
+                                        <th class="bordered">Problem</th>
+                                        <th class="bordered">Article</th>
+                                        <th class="bordered">YouTube</th>
+                                        <th class="bordered">Practice</th>
+                                        <th class="bordered">Note</th>
+                                        <th class="bordered">Difficulty</th>
+                                        <th class="bordered">Revision</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="topic-row">
+                                        <td>
+                                            <input type="checkbox" class="status-checkbox">
+                                        </td>
+                                        <td class="problem-name">Complexity Theory</td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-article-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-youtube-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" target="_blank" class="resource-link">
+                                                <i class="ri-code-line"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <button class="note-btn">
+                                                <i class="ri-add-line"></i>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <span class="difficulty hard">Hard</span>
+                                        </td>
+                                        <td>
+                                            <button class="revision-star">
+                                                <i class="ri-star-line"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    
+    <script src="/assets/scripts/index.js"></script>
+  </body>
+</html>

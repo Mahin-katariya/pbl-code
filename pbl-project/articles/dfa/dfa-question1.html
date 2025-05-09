@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design a DFA for Even Number of 0's | AutomataLab</title>
+    <link rel="stylesheet" href="/assets/styles/article.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="article-nav">
+        <a href="/" class="nav-logo">
+            <i class="ri-code-box-fill"></i>
+            <span>AutomataLab</span>
+        </a>
+        <div class="nav-links">
+            <a href="/">Dashboard</a>
+            <span>/</span>
+            <a href="#" class="current">DFA Basics</a>
+        </div>
+    </nav>
+
+    <main class="article-content">
+        <div class="question-header">
+            <h1>Design a DFA for Even Number of 0's</h1>
+            <div class="question-metadata">
+                <span class="difficulty easy">Easy</span>
+                <span class="topic-tag">DFA Basics</span>
+                <span class="estimated-time">15 min</span>
+            </div>
+        </div>
+
+        <div class="question-content">
+            <section id="problem-statement">
+                <h2>Problem Statement</h2>
+                <div class="content-box">
+                    <p>Design a DFA that accepts all binary strings containing an even number of 0's.</p>
+                    <div class="input-output">
+                        <h4>Example Accepted Strings:</h4>
+                        <ul>
+                            <li><code>11</code> (0 zeros - even)</li>
+                            <li><code>100</code> (1 zero - odd)</li>
+                            <li><code>1010</code> (2 zeros - even)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="prerequisites">
+                <h2>Prerequisites</h2>
+                <ul class="prerequisite-list">
+                    <li>Basic understanding of DFA components</li>
+                    <li>State transition diagrams</li>
+                    <li>Binary string concepts</li>
+                </ul>
+            </section>
+
+            <section id="approach">
+                <h2>Approach</h2>
+                <div class="content-box">
+                    <h3>Key Concepts</h3>
+                    <p>The key concept behind designing a DFA for even number of 0's is to use a state transition diagram to keep track of the number of 0's encountered. We can use two states: one for even number of 0's and one for odd number of 0's.</p>
+                    
+                    <h3>Step-by-Step Solution</h3>
+                    <ol>
+                        <li>Start with a state for even number of 0's.</li>
+                        <li>When a 0 is encountered, transition to the state for odd number of 0's.</li>
+                        <li>When a 1 is encountered, stay in the state for even number of 0's.</li>
+                        <li>Accept the string if the final state is the state for even number of 0's.</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section id="visual-explanation">
+                <h2>Visual Explanation</h2>
+                <div class="diagram-container">
+                    <img src="/assets/images/dfa-question1.png" alt="DFA for Even Number of 0's">
+                </div>
+            </section>
+
+            <section id="example">
+                <h2>Example</h2>
+                <div class="example-box">
+                    <p>Let's design a DFA for the string "1010":</p>
+                    <img src="/assets/images/dfa-question1-example.png" alt="DFA for 1010">
+                </div>
+            </section>
+
+            <section id="practice">
+                <h2>Practice Problems</h2>
+                <div class="practice-problems">
+                    <p>Try designing DFAs for the following strings:</p>
+                    <ul>
+                        <li><code>11</code></li>
+                        <li><code>100</code></li>
+                        <li><code>101010</code></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="article-footer">
+        <div class="navigation-links">
+            <a href="#" class="prev-article">← Previous Question</a>
+            <a href="#" class="next-article">Next Question →</a>
+        </div>
+        <div class="article-feedback">
+            <p>Was this explanation helpful?</p>
+            <button class="feedback-btn"><i class="ri-thumb-up-line"></i></button>
+            <button class="feedback-btn"><i class="ri-thumb-down-line"></i></button>
+        </div>
+    </footer>
+</body>
+</html> 

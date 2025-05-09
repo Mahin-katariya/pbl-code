@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complement of a DFA | AutomataLab</title>
+    <link rel="stylesheet" href="/assets/styles/article.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="article-nav">
+        <a href="/" class="nav-logo">
+            <i class="ri-code-box-fill"></i>
+            <span>AutomataLab</span>
+        </a>
+        <div class="nav-links">
+            <a href="/">Dashboard</a>
+            <span>/</span>
+            <a href="#" class="current">Complement of DFA</a>
+        </div>
+    </nav>
+
+    <main class="article-content">
+        <h1>Complement of a DFA: Flipping Accept/Reject States</h1>
+        
+        <div class="article-metadata">
+            <span class="difficulty easy">Easy</span>
+            <span class="reading-time">8 min read</span>
+            <span class="last-updated">Last updated: March 2024</span>
+        </div>
+
+        <div class="real-world-analogy">
+            <h2>🎯 What is DFA Complementation?</h2>
+            <p>Think of complementing a DFA like creating an "opposite day" version of your DFA - everything that was accepted is now rejected, and everything that was rejected is now accepted! It's like flipping a switch: YES becomes NO, and NO becomes YES.</p>
+        </div>
+
+        <section id="how-to">
+            <h2>How to Complement a DFA</h2>
+            <div class="steps-box">
+                <h3>Just Two Simple Steps:</h3>
+                <ol>
+                    <li>
+                        <strong>Make accepting states non-accepting</strong>
+                        <p>All states that were accepting (final) become non-accepting</p>
+                    </li>
+                    <li>
+                        <strong>Make non-accepting states accepting</strong>
+                        <p>All states that were non-accepting become accepting (final)</p>
+                    </li>
+                </ol>
+                <div class="important-note">
+                    <p>💡 Important: The transitions stay exactly the same!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="example1">
+            <h2>Example: DFA for "Ends with 1" → "Ends with 0"</h2>
+            <div class="example-box">
+                <h3>Original DFA (Accepts strings ending in 1)</h3>
+                <div class="string-examples">
+                    <div class="accepted">
+                        <h4>✅ Accepted:</h4>
+                        <ul>
+                            <li>1</li>
+                            <li>01</li>
+                            <li>11</li>
+                            <li>101</li>
+                        </ul>
+                    </div>
+                    <div class="rejected">
+                        <h4>❌ Rejected:</h4>
+                        <ul>
+                            <li>0</li>
+                            <li>10</li>
+                            <li>100</li>
+                            <li>110</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Insert Original DFA diagram here -->
+                <div class="dfa-diagram">
+                    <div class="diagram-placeholder">
+                        [Original DFA Diagram: Two states, q1 is accepting]
+                    </div>
+                </div>
+
+                <h3>Complemented DFA (Now accepts strings ending in 0)</h3>
+                <div class="string-examples">
+                    <div class="accepted">
+                        <h4>✅ Now Accepted:</h4>
+                        <ul>
+                            <li>0</li>
+                            <li>10</li>
+                            <li>100</li>
+                            <li>110</li>
+                        </ul>
+                    </div>
+                    <div class="rejected">
+                        <h4>❌ Now Rejected:</h4>
+                        <ul>
+                            <li>1</li>
+                            <li>01</li>
+                            <li>11</li>
+                            <li>101</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Insert Complemented DFA diagram here -->
+                <div class="dfa-diagram">
+                    <div class="diagram-placeholder">
+                        [Complemented DFA Diagram: Same structure, q0 is now accepting]
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="comparison">
+            <h2>Side-by-Side Comparison</h2>
+            <div class="comparison-box">
+                <div class="transition-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>State</th>
+                                <th>Original DFA</th>
+                                <th>Complemented DFA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>q0</td>
+                                <td>Non-accepting</td>
+                                <td>Accepting ✓</td>
+                            </tr>
+                            <tr>
+                                <td>q1</td>
+                                <td>Accepting ✓</td>
+                                <td>Non-accepting</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="table-note">Note: Transitions remain unchanged!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="try-yourself">
+            <h2>🎯 Try It Yourself!</h2>
+            <div class="challenge-box">
+                <h3>Practice Challenge:</h3>
+                <p>Take a DFA that accepts strings containing "00" and complement it to create a DFA that accepts strings NOT containing "00".</p>
+                <a href="/tools.html" class="tool-link">
+                    Use our DFA Simulator to try it out! →
+                </a>
+            </div>
+        </section>
+
+        <section id="applications">
+            <h2>🌟 Why is This Useful?</h2>
+            <div class="applications-box">
+                <ul>
+                    <li>Creating "NOT" conditions in pattern matching</li>
+                    <li>Verifying DFA correctness by testing opposite conditions</li>
+                    <li>Simplifying complex regular expressions</li>
+                    <li>Building negated search patterns</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="summary">
+            <h2>Quick Summary</h2>
+            <div class="summary-box">
+                <ul>
+                    <li>Complementing a DFA just means flipping all accept/reject states</li>
+                    <li>The structure and transitions stay exactly the same</li>
+                    <li>It's like creating an "opposite" version of your original DFA</li>
+                    <li>Useful for creating "NOT" conditions in pattern matching</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="article-footer">
+        <div class="navigation-links">
+            <a href="/articles/dfa/dfa-basics.html" class="prev-article">← Previous: DFA Basics</a>
+            <a href="/articles/dfa/dfa-union.html" class="next-article">Next: Union of DFAs →</a>
+        </div>
+        <div class="article-feedback">
+            <p>Was this article helpful?</p>
+            <button class="feedback-btn"><i class="ri-thumb-up-line"></i></button>
+            <button class="feedback-btn"><i class="ri-thumb-down-line"></i></button>
+        </div>
+    </footer>
+</body>
+</html> 

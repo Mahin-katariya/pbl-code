@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to DFA | AutomataLab</title>
+    <link rel="stylesheet" href="/assets/styles/article.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="article-nav">
+        <a href="/" class="nav-logo">
+            <i class="ri-code-box-fill"></i>
+            <span>AutomataLab</span>
+        </a>
+        <div class="nav-links">
+            <a href="/">Dashboard</a>
+            <span>/</span>
+            <a href="#" class="current">DFA Basics</a>
+        </div>
+    </nav>
+
+    <main class="article-content">
+        <h1>Understanding DFA: A Beginner's Guide</h1>
+        
+        <div class="article-metadata">
+            <span class="difficulty easy">Easy</span>
+            <span class="reading-time">15 min read</span>
+            <span class="last-updated">Last updated: March 2024</span>
+        </div>
+
+        <div class="real-world-analogy">
+            <h2>🚪 Think of it Like a House...</h2>
+            <p>Imagine walking through a house with different rooms. Each room is a "state," and each doorway is a "transition." You can only be in one room at a time, and you can only move through doorways that exist. That's exactly how a DFA works!</p>
+            <!-- Insert house diagram here -->
+        </div>
+
+        <section id="example1">
+            <h2>Example 1: DFA for Strings Ending in "01"</h2>
+            
+            <div class="example-box">
+                <h3>What We Want</h3>
+                <div class="string-examples">
+                    <div class="accepted">
+                        <h4>✅ Accepted Strings:</h4>
+                        <ul>
+                            <li>"01"</li>
+                            <li>"101"</li>
+                            <li>"0001"</li>
+                            <li>"1101"</li>
+                        </ul>
+                    </div>
+                    <div class="rejected">
+                        <h4>❌ Rejected Strings:</h4>
+                        <ul>
+                            <li>"0"</li>
+                            <li>"1"</li>
+                            <li>"010"</li>
+                            <li>"011"</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="transition-table">
+                    <h4>Transition Table</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>State</th>
+                                <th>Input: 0</th>
+                                <th>Input: 1</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>→ q0</td>
+                                <td>q1</td>
+                                <td>q0</td>
+                            </tr>
+                            <tr>
+                                <td>q1</td>
+                                <td>q1</td>
+                                <td>q2</td>
+                            </tr>
+                            <tr>
+                                <td>*q2</td>
+                                <td>q1</td>
+                                <td>q0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Insert DFA diagram for Example 1 here -->
+                <div class="dfa-diagram">
+                    <div class="diagram-placeholder">
+                        [DFA Diagram: String ending in "01"]
+                    </div>
+                </div>
+
+                <div class="walkthrough">
+                    <h4>Let's Walk Through "1101"</h4>
+                    <ol class="steps">
+                        <li>Start at q0</li>
+                        <li>Read '1': Stay at q0</li>
+                        <li>Read '1': Stay at q0</li>
+                        <li>Read '0': Move to q1</li>
+                        <li>Read '1': Move to q2 (Accept!)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section id="example2">
+            <h2>Example 2: DFA for Even Number of 0s</h2>
+            
+            <div class="example-box">
+                <h3>What We Want</h3>
+                <div class="string-examples">
+                    <div class="accepted">
+                        <h4>✅ Accepted Strings:</h4>
+                        <ul>
+                            <li>""</li>
+                            <li>"00"</li>
+                            <li>"100"</li>
+                            <li>"0011"</li>
+                        </ul>
+                    </div>
+                    <div class="rejected">
+                        <h4>❌ Rejected Strings:</h4>
+                        <ul>
+                            <li>"0"</li>
+                            <li>"000"</li>
+                            <li>"10"</li>
+                            <li>"01"</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Insert DFA diagram for Example 2 here -->
+                <div class="dfa-diagram">
+                    <div class="diagram-placeholder">
+                        [DFA Diagram: Even number of 0s]
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="try-yourself">
+            <h2>🎯 Try It Yourself!</h2>
+            <div class="challenge-box">
+                <h3>Practice Challenges:</h3>
+                <ol>
+                    <li>Design a DFA that accepts strings containing "bb"</li>
+                    <li>Create a DFA for strings ending in "10"</li>
+                    <li>Build a DFA for strings with an odd number of 1s</li>
+                </ol>
+                <a href="/tools.html" class="tool-link">
+                    Use our DFA Simulator to solve these challenges! →
+                </a>
+            </div>
+        </section>
+
+        <section id="applications">
+            <h2>🌟 Real-life Applications</h2>
+            <div class="applications-box">
+                <ul>
+                    <li>Pattern matching in text editors</li>
+                    <li>Lexical analysis in compilers</li>
+                    <li>Input validation in forms</li>
+                    <li>Protocol verification in networking</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="summary">
+            <h2>Quick Summary</h2>
+            <div class="summary-box">
+                <ul>
+                    <li>A DFA is like moving through rooms based on rules</li>
+                    <li>Each state (room) knows exactly where to go next</li>
+                    <li>Some states are "accepting" states (goal rooms)</li>
+                    <li>DFAs are great for pattern matching and validation</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="article-footer">
+        <div class="navigation-links">
+            <a href="#" class="prev-article">← Previous: Introduction to Automata</a>
+            <a href="#" class="next-article">Next: NFA Basics →</a>
+        </div>
+        <div class="article-feedback">
+            <p>Was this article helpful?</p>
+            <button class="feedback-btn"><i class="ri-thumb-up-line"></i></button>
+            <button class="feedback-btn"><i class="ri-thumb-down-line"></i></button>
+        </div>
+    </footer>
+</body>
+</html> 

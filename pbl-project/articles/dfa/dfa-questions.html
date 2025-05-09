@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DFA Practice Questions | AutomataLab</title>
+    <link rel="stylesheet" href="/assets/styles/article.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="article-nav">
+        <a href="/" class="nav-logo">
+            <i class="ri-code-box-fill"></i>
+            <span>AutomataLab</span>
+        </a>
+        <div class="nav-links">
+            <a href="/">Dashboard</a>
+            <span>/</span>
+            <a href="#" class="current">DFA Practice Questions</a>
+        </div>
+    </nav>
+
+    <main class="article-content">
+        <h1>DFA Construction Practice Questions</h1>
+        
+        <div class="article-metadata">
+            <span class="difficulty mixed">Mixed Difficulty</span>
+            <span class="question-count">15 Questions</span>
+            <span class="last-updated">Last updated: March 2024</span>
+        </div>
+
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <p>For each question:</p>
+            <ul>
+                <li>Design a DFA that recognizes the given language</li>
+                <li>Create a transition table</li>
+                <li>Draw the state diagram</li>
+                <li>Mark initial and final states clearly</li>
+                <li>Test with sample strings</li>
+            </ul>
+            <p>Alphabet for all questions: Σ = {0, 1}</p>
+        </div>
+
+        <section class="questions">
+            <div class="question" id="q1">
+                <h2>Question 1: Begins and Ends with 01</h2>
+                <div class="question-content">
+                    <div class="problem-statement">
+                        <p>Design a DFA that accepts all strings that begin with '01' and end with '01'.</p>
+                        <div class="examples">
+                            <strong>Accept:</strong> "0101", "01001", "010101"<br>
+                            <strong>Reject:</strong> "0110", "1010", "0111"
+                        </div>
+                    </div>
+                    
+                    <!-- Insert DFA diagram here -->
+                    <div class="dfa-diagram">
+                        <div class="diagram-placeholder">
+                            [DFA Diagram for strings beginning and ending with 01]
+                        </div>
+                    </div>
+
+                    <div class="transition-table">
+                        <h4>Transition Table:</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>State</th>
+                                    <th>0</th>
+                                    <th>1</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>→q0</td>
+                                    <td>q1</td>
+                                    <td>qr</td>
+                                </tr>
+                                <tr>
+                                    <td>q1</td>
+                                    <td>qr</td>
+                                    <td>q2</td>
+                                </tr>
+                                <tr>
+                                    <td>q2</td>
+                                    <td>q3</td>
+                                    <td>q2</td>
+                                </tr>
+                                <tr>
+                                    <td>q3</td>
+                                    <td>q3</td>
+                                    <td>q4</td>
+                                </tr>
+                                <tr>
+                                    <td>*q4</td>
+                                    <td>q3</td>
+                                    <td>q2</td>
+                                </tr>
+                                <tr>
+                                    <td>qr</td>
+                                    <td>qr</td>
+                                    <td>qr</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question" id="q2">
+                <h2>Question 2: Even Number of 1's</h2>
+                <div class="question-content">
+                    <div class="problem-statement">
+                        <p>Design a DFA that accepts strings containing an even number of 1's.</p>
+                        <div class="examples">
+                            <strong>Accept:</strong> "", "0", "11", "1100", "1010"<br>
+                            <strong>Reject:</strong> "1", "101", "1110"
+                        </div>
+                    </div>
+                    
+                    <!-- Insert DFA diagram here -->
+                    <div class="dfa-diagram">
+                        <div class="diagram-placeholder">
+                            [DFA Diagram for even number of 1's]
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question" id="q3">
+                <h2>Question 3: Two or Three 1's</h2>
+                <div class="question-content">
+                    <div class="problem-statement">
+                        <p>Design a DFA that accepts strings containing exactly two or three 1's.</p>
+                        <div class="examples">
+                            <strong>Accept:</strong> "11", "101", "1011", "111"<br>
+                            <strong>Reject:</strong> "1", "1111", "0000", "1010"
+                        </div>
+                    </div>
+                    
+                    <div class="dfa-diagram">
+                        <div class="diagram-placeholder">
+                            [DFA Diagram for strings with two or three 1's]
+                        </div>
+                    </div>
+
+                    <div class="transition-table">
+                        <h4>Transition Table:</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>State</th>
+                                    <th>0</th>
+                                    <th>1</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>→q0</td>
+                                    <td>q0</td>
+                                    <td>q1</td>
+                                </tr>
+                                <tr>
+                                    <td>q1</td>
+                                    <td>q1</td>
+                                    <td>q2</td>
+                                </tr>
+                                <tr>
+                                    <td>*q2</td>
+                                    <td>q2</td>
+                                    <td>q3</td>
+                                </tr>
+                                <tr>
+                                    <td>*q3</td>
+                                    <td>q3</td>
+                                    <td>q4</td>
+                                </tr>
+                                <tr>
+                                    <td>q4</td>
+                                    <td>q4</td>
+                                    <td>q4</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question" id="q4">
+                <h2>Question 4: Even 0's and Even Length</h2>
+                <div class="question-content">
+                    <div class="problem-statement">
+                        <p>Design a DFA that accepts strings with an even number of 0's and even length.</p>
+                        <div class="examples">
+                            <strong>Accept:</strong> "11", "00", "1100", "0011"<br>
+                            <strong>Reject:</strong> "0", "01", "001", "1010"
+                        </div>
+                    </div>
+                    
+                    <div class="dfa-diagram">
+                        <div class="diagram-placeholder">
+                            [DFA Diagram for even 0's and even length]
+                        </div>
+                    </div>
+
+                    <div class="transition-table">
+                        <h4>Transition Table:</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>State</th>
+                                    <th>0</th>
+                                    <th>1</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>→*q0</td>
+                                    <td>q2</td>
+                                    <td>q1</td>
+                                </tr>
+                                <tr>
+                                    <td>q1</td>
+                                    <td>q3</td>
+                                    <td>q0</td>
+                                </tr>
+                                <tr>
+                                    <td>q2</td>
+                                    <td>q0</td>
+                                    <td>q3</td>
+                                </tr>
+                                <tr>
+                                    <td>q3</td>
+                                    <td>q1</td>
+                                    <td>q2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question" id="q5">
+                <h2>Question 5: Contains Substring "110"</h2>
+                <div class="question-content">
+                    <div class="problem-statement">
+                        <p>Design a DFA that accepts strings containing the substring "110".</p>
+                        <div class="examples">
+                            <strong>Accept:</strong> "110", "0110", "1101", "11011"<br>
+                            <strong>Reject:</strong> "11", "101", "010", "1111"
+                        </div>
+                    </div>
+                    
+                    <div class="dfa-diagram">
+                        <div class="diagram-placeholder">
+                            [DFA Diagram for strings containing 110]
+                        </div>
+                    </div>
+
+                    <div class="transition-table">
+                        <h4>Transition Table:</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>State</th>
+                                    <th>0</th>
+                                    <th>1</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>→q0</td>
+                                    <td>q0</td>
+                                    <td>q1</td>
+                                </tr>
+                                <tr>
+                                    <td>q1</td>
+                                    <td>q0</td>
+                                    <td>q2</td>
+                                </tr>
+                                <tr>
+                                    <td>q2</td>
+                                    <td>*q3</td>
+                                    <td>q2</td>
+                                </tr>
+                                <tr>
+                                    <td>*q3</td>
+                                    <td>*q3</td>
+                                    <td>*q3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question" id="q6">
+                <h2>Question 6: One Occurrence of "010"</h2>
+                <div class="question-content">
+                    <div class="problem-statement">
+                        <p>Design a DFA that accepts strings containing exactly one occurrence of "010".</p>
+                        <div class="examples">
+                            <strong>Accept:</strong> "010", "0010", "0101", "1010"<br>
+                            <strong>Reject:</strong> "0100010", "01010", "", "111"
+                        </div>
+                    </div>
+                    
+                    <div class="dfa-diagram">
+                        <div class="diagram-placeholder">
+                            [DFA Diagram for one occurrence of 010]
+                        </div>
+                    </div>
+
+                    <div class="transition-table">
+                        <h4>Transition Table:</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>State</th>
+                                    <th>0</th>
+                                    <th>1</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>→q0</td>
+                                    <td>q1</td>
+                                    <td>q0</td>
+                                </tr>
+                                <tr>
+                                    <td>q1</td>
+                                    <td>q1</td>
+                                    <td>q2</td>
+                                </tr>
+                                <tr>
+                                    <td>q2</td>
+                                    <td>*q3</td>
+                                    <td>q0</td>
+                                </tr>
+                                <tr>
+                                    <td>*q3</td>
+                                    <td>q4</td>
+                                    <td>q4</td>
+                                </tr>
+                                <tr>
+                                    <td>q4</td>
+                                    <td>q4</td>
+                                    <td>q4</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question" id="q7">
+                <h2>Question 7: Number of 0's mod 3 = 2</h2>
+                <div class="question-content">
+                    <div class="problem-statement">
+                        <p>Design a DFA that accepts strings where the number of 0's when divided by 3 gives remainder 2.</p>
+                        <div class="examples">
+                            <strong>Accept:</strong> "00", "100", "0010", "00100"<br>
+                            <strong>Reject:</strong> "0", "000", "0000", "111"
+                        </div>
+                    </div>
+                    
+                    <div class="dfa-diagram">
+                        <div class="diagram-placeholder">
+                            [DFA Diagram for number of 0's mod 3 = 2]
+                        </div>
+                    </div>
+
+                    <div class="transition-table">
+                        <h4>Transition Table:</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>State</th>
+                                    <th>0</th>
+                                    <th>1</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>→q0</td>
+                                    <td>q1</td>
+                                    <td>q0</td>
+                                </tr>
+                                <tr>
+                                    <td>q1</td>
+                                    <td>*q2</td>
+                                    <td>q1</td>
+                                </tr>
+                                <tr>
+                                    <td>*q2</td>
+                                    <td>q0</td>
+                                    <td>*q2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question" id="q8">
+                <h2>Question 8: Every Odd Position is 0</h2>
+                <div class="question-content">
+                    <div class="problem-statement">
+                        <p>Design a DFA that accepts strings where every odd position contains 0.</p>
+                        <div class="examples">
+                            <strong>Accept:</strong> "0", "01", "010", "0101"<br>
+                            <strong>Reject:</strong> "1", "11", "100", "1010"
+                        </div>
+                    </div>
+                    
+                    <div class="dfa-diagram">
+                        <div class="diagram-placeholder">
+                            [DFA Diagram for 0's in odd positions]
+                        </div>
+                    </div>
+
+                    <div class="transition-table">
+                        <h4>Transition Table:</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>State</th>
+                                    <th>0</th>
+                                    <th>1</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>→*q0</td>
+                                    <td>q1</td>
+                                    <td>qr</td>
+                                </tr>
+                                <tr>
+                                    <td>q1</td>
+                                    <td>qr</td>
+                                    <td>*q0</td>
+                                </tr>
+                                <tr>
+                                    <td>qr</td>
+                                    <td>qr</td>
+                                    <td>qr</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question" id="q9">
+                <h2>Question 9: Length Divisible by 3 or Ends in 00</h2>
+                <div class="question-content">
+                    <div class="problem-statement">
+                        <p>Design a DFA that accepts strings whose length is divisible by 3 or that end with "00".</p>
+                        <div class="examples">
+                            <strong>Accept:</strong> "000", "111", "100", "1100"<br>
+                            <strong>Reject:</strong> "0", "11", "101", "1010"
+                        </div>
+                    </div>
+                    
+                    <div class="dfa-diagram">
+                        <div class="diagram-placeholder">
+                            [DFA Diagram for length mod 3 = 0 or ends in 00]
+                        </div>
+                    </div>
+
+                    <div class="transition-table">
+                        <h4>Transition Table:</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>State</th>
+                                    <th>0</th>
+                                    <th>1</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>→*q0</td>
+                                    <td>*q1</td>
+                                    <td>q2</td>
+                                </tr>
+                                <tr>
+                                    <td>*q1</td>
+                                    <td>*q1</td>
+                                    <td>q2</td>
+                                </tr>
+                                <tr>
+                                    <td>q2</td>
+                                    <td>*q1</td>
+                                    <td>*q0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question" id="q10">
+                <h2>Question 10: Every Block of 4 Contains "01"</h2>
+                <div class="question-content">
+                    <div class="problem-statement">
+                        <p>Design a DFA that accepts strings where every block of 4 consecutive symbols contains the substring "01".</p>
+                        <div class="examples">
+                            <strong>Accept:</strong> "01", "0101", "1101", "110101"<br>
+                            <strong>Reject:</strong> "1111", "0000", "1100", "11110000"
+                        </div>
+                    </div>
+                    
+                    <div class="dfa-diagram">
+                        <div class="diagram-placeholder">
+                            [DFA Diagram for 01 in every block of 4]
+                        </div>
+                    </div>
+
+                    <div class="transition-table">
+                        <h4>Transition Table:</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>State</th>
+                                    <th>0</th>
+                                    <th>1</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>→*q0</td>
+                                    <td>q1</td>
+                                    <td>q2</td>
+                                </tr>
+                                <tr>
+                                    <td>q1</td>
+                                    <td>q3</td>
+                                    <td>*q0</td>
+                                </tr>
+                                <tr>
+                                    <td>q2</td>
+                                    <td>*q0</td>
+                                    <td>q4</td>
+                                </tr>
+                                <tr>
+                                    <td>q3</td>
+                                    <td>qr</td>
+                                    <td>*q0</td>
+                                </tr>
+                                <tr>
+                                    <td>q4</td>
+                                    <td>*q0</td>
+                                    <td>qr</td>
+                                </tr>
+                                <tr>
+                                    <td>qr</td>
+                                    <td>qr</td>
+                                    <td>qr</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hints">
+            <h2>General Tips for DFA Construction</h2>
+            <div class="tips-box">
+                <ul>
+                    <li>Start by identifying the patterns you need to track</li>
+                    <li>Think about what information needs to be remembered in states</li>
+                    <li>Consider edge cases and boundary conditions</li>
+                    <li>Test your DFA with both accepting and rejecting strings</li>
+                    <li>Make sure all states have transitions for all input symbols</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="article-footer">
+        <div class="navigation-links">
+            <a href="/articles/dfa/dfa-basics.html" class="prev-article">← DFA Basics</a>
+            <a href="/articles/dfa/dfa-solutions.html" class="next-article">Solutions →</a>
+        </div>
+    </footer>
+</body>
+</html> 

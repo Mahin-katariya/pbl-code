@@ -1,0 +1,39 @@
+<--- AutomataHub --->
+
+Homepage
+
+Hero Section: Catchy title (e.g., "Master Automata & Compiler Design at MUJ") + CTA for resources.
+Tabs for:
+Resources (Notes, PDFs)
+Practice Questions (PYQs, MCQs)
+Discussion Forum
+Quizzes & Simulations
+Search bar for instant resource search.
+Subject Page (Automata)
+
+Divided into Topics (DFA, NFA, CFG, Turing Machines, etc.).
+Each topic has:
+Notes & PDFs
+MCQs & PYQs
+Interactive Tools (if applicable)
+Practice Page
+
+MCQs + Coding problems (Compiler implementation tasks)
+Timed Practice Mode
+Community Page
+
+Doubt discussion threads
+Leaderboard & Badges
+
+
+color-1 : #3D8D7A
+color-2 : #B3D8A8
+color-3 : #FBFFE4
+color-4 : #A3D1C6
+
+
+
+
+Homepage
+singup Page
+profile Page

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DFA for Even Binary Numbers | AutomataLab</title>
+    <link rel="stylesheet" href="/assets/styles/article.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="article-nav">
+        <a href="/" class="nav-logo">
+            <i class="ri-code-box-fill"></i>
+            <span>AutomataLab</span>
+        </a>
+        <div class="nav-links">
+            <a href="/">Dashboard</a>
+            <span>/</span>
+            <a href="#" class="current">Even Binary Numbers</a>
+        </div>
+    </nav>
+
+    <main class="article-content">
+        <h1>DFA for Even Binary Numbers</h1>
+        
+        <div class="article-metadata">
+            <span class="difficulty easy">Easy</span>
+            <span class="reading-time">10 min read</span>
+            <span class="last-updated">Last updated: March 2024</span>
+        </div>
+
+        <div class="real-world-analogy">
+            <h2>🎯 Our Goal</h2>
+            <p>We want to build a DFA that can recognize binary numbers that are even. Here's the trick: in binary, a number is even if and only if it ends with 0! For example, 1010 (10 in decimal) is even, while 1011 (11 in decimal) is odd.</p>
+        </div>
+
+        <section id="examples">
+            <h2>Examples</h2>
+            <div class="example-box">
+                <div class="string-examples">
+                    <div class="accepted">
+                        <h4>✅ Even Numbers (Accept):</h4>
+                        <ul>
+                            <li>0 (decimal: 0)</li>
+                            <li>10 (decimal: 2)</li>
+                            <li>100 (decimal: 4)</li>
+                            <li>1010 (decimal: 10)</li>
+                        </ul>
+                    </div>
+                    <div class="rejected">
+                        <h4>❌ Odd Numbers (Reject):</h4>
+                        <ul>
+                            <li>1 (decimal: 1)</li>
+                            <li>11 (decimal: 3)</li>
+                            <li>101 (decimal: 5)</li>
+                            <li>1011 (decimal: 11)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dfa-design">
+            <h2>DFA Design</h2>
+            <div class="content-box">
+                <h3>States We Need:</h3>
+                <ul>
+                    <li>q0: Even numbers (accepting state)</li>
+                    <li>q1: Odd numbers</li>
+                </ul>
+
+                <div class="transition-table">
+                    <h4>Transition Table</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Current State</th>
+                                <th>Input: 0</th>
+                                <th>Input: 1</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>→ *q0 (Even)</td>
+                                <td>q0</td>
+                                <td>q1</td>
+                            </tr>
+                            <tr>
+                                <td>q1 (Odd)</td>
+                                <td>q0</td>
+                                <td>q1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="table-note">Note: → marks start state, * marks accepting state</p>
+                </div>
+
+                <!-- Insert DFA diagram here -->
+                <div class="dfa-diagram">
+                    <div class="diagram-placeholder">
+                        [DFA Diagram: Two states showing transitions for even/odd numbers]
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="walkthrough">
+            <h2>Let's Walk Through an Example</h2>
+            <div class="walkthrough">
+                <h4>Processing the string "1010" (decimal 10)</h4>
+                <ol class="steps">
+                    <li>Start at q0 (Even state)</li>
+                    <li>Read '1': Move to q1 (Now odd)</li>
+                    <li>Read '0': Move to q0 (Now even)</li>
+                    <li>Read '1': Move to q1 (Now odd)</li>
+                    <li>Read '0': Move to q0 (Now even)</li>
+                    <li>End at q0 (accepting state) ✅ Number is even!</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="try-yourself">
+            <h2>🎯 Try It Yourself!</h2>
+            <div class="challenge-box">
+                <h3>Practice Challenge:</h3>
+                <p>Can you modify this DFA to recognize numbers divisible by 4? (Hint: Look at the last two bits!)</p>
+                <a href="/tools.html" class="tool-link">
+                    Use our DFA Simulator to solve this challenge! →
+                </a>
+            </div>
+        </section>
+
+        <section id="real-world">
+            <h2>🌟 Real-World Applications</h2>
+            <div class="applications-box">
+                <ul>
+                    <li>Digital circuit design for parity checking</li>
+                    <li>Memory address validation (even/odd addressing)</li>
+                    <li>Basic arithmetic operations in computer architecture</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="summary">
+            <h2>Quick Summary</h2>
+            <div class="summary-box">
+                <ul>
+                    <li>A binary number is even if it ends in 0</li>
+                    <li>We only need two states: even (q0) and odd (q1)</li>
+                    <li>Reading a 0 keeps even numbers even, and makes odd numbers even</li>
+                    <li>Reading a 1 makes even numbers odd, and keeps odd numbers odd</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="article-footer">
+        <div class="navigation-links">
+            <a href="/articles/dfa/dfa-basics.html" class="prev-article">← Previous: DFA Basics</a>
+            <a href="/articles/dfa/dfa-divisible-by-3.html" class="next-article">Next: Numbers Divisible by 3 →</a>
+        </div>
+        <div class="article-feedback">
+            <p>Was this article helpful?</p>
+            <button class="feedback-btn"><i class="ri-thumb-up-line"></i></button>
+            <button class="feedback-btn"><i class="ri-thumb-down-line"></i></button>
+        </div>
+    </footer>
+</body>
+</html> 

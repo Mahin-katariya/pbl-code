@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DFA for Even Zeros | AutomataLab</title>
+    <link rel="stylesheet" href="/assets/styles/article.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="article-nav">
+        <a href="/" class="nav-logo">
+            <i class="ri-code-box-fill"></i>
+            <span>AutomataLab</span>
+        </a>
+        <div class="nav-links">
+            <a href="/">Dashboard</a>
+            <span>/</span>
+            <a href="#" class="current">Even Number of Zeros</a>
+        </div>
+    </nav>
+
+    <main class="article-content">
+        <div class="question-header">
+            <h1>Design DFA for Even Number of Zeros</h1>
+            <div class="question-metadata">
+                <span class="difficulty easy">Easy</span>
+                <span class="topic-tag">DFA</span>
+                <span class="estimated-time">15 min</span>
+            </div>
+        </div>
+
+        <div class="question-content">
+            <section id="problem-statement">
+                <h2>Problem Statement</h2>
+                <div class="content-box">
+                    <p>Design a DFA that accepts all binary strings containing an even number of 0's.</p>
+                    <div class="example-strings">
+                        <h4>Examples:</h4>
+                        <ul>
+                            <li>Accept: "" (empty string), "1", "00", "101", "1010"</li>
+                            <li>Reject: "0", "01", "000"</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="solution">
+                <h2>Solution Design</h2>
+                <div class="state-diagram">
+                    <img src="/assets/images/dfa-even-zeros.png" alt="DFA State Diagram">
+                    <p>State Diagram Explanation:</p>
+                    <ul>
+                        <li>q0: Even number of 0's (accepting state)</li>
+                        <li>q1: Odd number of 0's</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="article-footer">
+        <div class="navigation-links">
+            <a href="#" class="prev-article">← Previous Question</a>
+            <a href="#" class="next-article">Next Question →</a>
+        </div>
+    </footer>
+</body>
+</html> 
